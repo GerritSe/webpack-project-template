@@ -5,8 +5,8 @@
   "author": "Gerrit Seger",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "dev": "webpack-dev-server --content-base dist"
+    "build": "NODE_ENV=production webpack --config webpack/webpack.config.js",
+    "dev": "NODE_ENV=development webpack-dev-server --config webpack/webpack.config.js --content-base dist"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",

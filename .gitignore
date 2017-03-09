@@ -1,6 +1,5 @@
 # node / yarn
 node_modules
-npm-debug.log
 
 # dist
 dist/bundle.js
