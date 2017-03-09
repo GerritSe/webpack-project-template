@@ -1,0 +1,15 @@
+{
+  "name": "webpack-project-template",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Gerrit Seger",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --content-base dist"
+  },
+  "devDependencies": {
+    "webpack": "~> 2.2.1",
+    "webpack-dev-server": "~> 2.2.1"
+  }
+}
