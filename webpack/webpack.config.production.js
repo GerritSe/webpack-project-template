@@ -9,7 +9,6 @@ class WebpackProductionConfiguration {
         compressor: { warnings: true },
         sourceMap: false
       }),
-      new webpack.optimize.DedupePlugin(),
       new webpack.optimize.OccurrenceOrderPlugin()
     )
   }
