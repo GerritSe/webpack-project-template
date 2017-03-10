@@ -1,7 +1,4 @@
 const path = require('path')
-const env = require('./env')
-const developmentConfig = require('./webpack.config.development')
-const productionConfig = require('./webpack.config.production')
 
 const config = {
   entry: './src/index.js',
@@ -32,7 +29,5 @@ const config = {
     ]
   }
 };
-
-(env.production ? productionConfig : developmentConfig).applyConfiguration(config)
 
 module.exports = config

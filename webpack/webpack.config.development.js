@@ -1,7 +1,5 @@
-class WebpackDevelopmentConfiguration {
-  static applyConfiguration(config) {
-    config.devtool = 'source-map'
-  }
-}
+const config = require('./webpack.config.base')
 
-module.exports = WebpackDevelopmentConfiguration
+config.devtool = 'source-map'
+
+module.exports = config

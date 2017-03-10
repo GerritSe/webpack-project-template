@@ -5,8 +5,8 @@
   "author": "Gerrit Seger",
   "license": "MIT",
   "scripts": {
-    "build": "NODE_ENV=production webpack --config webpack/webpack.config.js",
-    "dev": "NODE_ENV=development webpack-dev-server --config webpack/webpack.config.js --content-base dist --open",
+    "build": "NODE_ENV=production webpack --config webpack/webpack.config.production.js",
+    "dev": "NODE_ENV=development webpack-dev-server --config webpack/webpack.config.development.js --content-base dist --open",
     "test": "NODE_ENV=test karma start karma.config.js"
   },
   "devDependencies": {
