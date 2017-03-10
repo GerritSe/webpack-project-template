@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "NODE_ENV=production webpack --config webpack/webpack.config.js",
-    "dev": "NODE_ENV=development webpack-dev-server --config webpack/webpack.config.js --content-base dist"
+    "dev": "NODE_ENV=development webpack-dev-server --config webpack/webpack.config.js --content-base dist --open",
+    "test": "NODE_ENV=test karma start karma.config.js"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
@@ -15,6 +16,11 @@
     "eslint": "^3.17.1",
     "eslint-config-recommended": "^1.5.0",
     "eslint-loader": "^1.6.3",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-webpack": "^2.0.2",
     "webpack": "~> 2.2.1",
     "webpack-dev-server": "~> 2.2.1"
   }
