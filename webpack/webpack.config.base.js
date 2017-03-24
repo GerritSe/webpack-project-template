@@ -1,7 +1,7 @@
 const path = require('path')
 
 const config = {
-  entry: ['./src/index.js'],
+  entry: ['./src/index.ts'],
   output: {
     path: path.resolve(__dirname, '..', 'dist'),
     filename: 'bundle.js',
@@ -25,8 +25,17 @@ const config = {
             presets: ['es2015']
           }
         }
+      }, {
+        test: /\.ts$/,
+        include: path.resolve(__dirname, '..', 'src'),
+        use: {
+          loader: 'ts-loader'
+        }
       }
     ]
+  },
+  resolve: {
+    extensions: ['.js', '.ts']
   }
 };
 

@@ -1,4 +1,6 @@
 class App {
+  _element: HTMLElement
+
   constructor() {
     this._element = document.getElementsByTagName('body')[0]
   }
@@ -9,4 +11,4 @@ class App {
   }
 }
 
-export default App
+export { App }
