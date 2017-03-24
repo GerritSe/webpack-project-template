@@ -9,5 +9,6 @@ config.plugins.push(
   }),
   new webpack.optimize.OccurrenceOrderPlugin()
 )
+config.entry.push('babel-polyfill')
 
 module.exports = config
