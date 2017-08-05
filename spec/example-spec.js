@@ -1,4 +1,4 @@
-import App from 'app/app'
+import { App } from 'app/app'
 
 describe('An example test', () => {
   it('runs specs correctly', () => {
